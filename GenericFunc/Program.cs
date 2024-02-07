@@ -12,3 +12,6 @@ Console.WriteLine("Largest element in doubleList: " + Functions.FindLargest(doub
 List<string> stringList = new List<string>() { "apple", "banana", "orange", "kiwi" };
 Console.WriteLine("Largest element in stringList: " + Functions.FindLargest(stringList)); // Output: orange
 
+// Opgave 3
+List<Car> carList = new List<Car>() { new Car("AB43412", "Toyota", 160), new Car("CC6562", "Volvo", 200) };
+Console.WriteLine("Largest element in carList: " + Functions.FindLargest(carList)); // {Id=0, Regno=CC6562, Make=Volvo, Speed=200}
