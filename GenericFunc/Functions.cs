@@ -16,6 +16,29 @@ namespace GenericFunc
             }
             return largest;
         }
-
+        public static double FindLargest(List<double> doubles)
+        {
+            double largest = double.MinValue;
+            foreach (double i in doubles)
+            {
+                if (i > largest)
+                {
+                    largest = i;
+                }
+            }
+            return largest;
+        }
+        public static string FindLargest(List<string> strings)
+        {
+            string largest = string.Empty;
+            foreach (string s in strings)
+            {
+                if (s.Length >= largest.Length)
+                {
+                    largest = s;
+                }
+            }
+            return largest;
+        }
     }
 }
